@@ -15,6 +15,10 @@ class Pet:
     
   def describe(self):
    return f"{self.name} is {self.age} years old and says {self.speak()}"
+
+  def sleep(self):
+    sleep.energy = 3
+    return f"{self.name} takes a nap. Energy is back to {self.energy}."
     
 class Dog(Pet):
   def speak(self):
